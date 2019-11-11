@@ -1,0 +1,65 @@
+body {
+  background: #554c48cc;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #58a95e;
+}
+
+.main-wrapper {
+  margin: 1em;
+  padding: 0.5em;
+}
+.main {
+  overflow: hidden;
+}
+
+.main-poster {
+  position: relative;
+}
+.main-logo {
+  position: absolute;
+  max-width: 50vw;
+  left: 10em;
+  bottom: 15em;
+}
+.main-jumbo {
+  position: absolute;
+  bottom: 10em;
+}
+.main-image {
+  margin: 1em;
+  opacity: 0.5;
+}
+
+.divider {
+  margin: 1em 0;
+  border-top: 1px solid #58a95e;
+}
+
+.address-wrapper {
+  border-radius: 1em;
+  border: 1px solid #58a95e;
+  padding: 0.5em;
+  color: #fff;
+}
+
+.addr {
+  margin: 0 auto;
+}
+
+.footer-title-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.copy {
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+}
