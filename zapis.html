@@ -24,7 +24,7 @@
   </head>
   <body>
     <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <button
           class="navbar-toggler"
           type="button"
@@ -58,24 +58,25 @@
             </li>
           </ul>
         </div>
-        <a class="navbar-brand" href="tel:=7995605680">+7-995-605-6805</a>
+        <a class="navbar-brand" href="tel:=+7995605680">+7-995-605-6805</a>
       </nav>
     </div>
     <div class="main">
-      <div class="container">
-        <div class="row main-wrapper">
-            <div class="title">Страница записи</div>
+      <div class="container-fluid">
+        <div class="row">
+          Страница записи
+        </div>
       </div>
     </div>
     <div class="footer"></div>
     <div class="container-fluid divider"></div>
     <div class="container address-wrapper">
       <div class="row">
-        <div class="col-sm-12 col-lg-6 footer-title-wrap">
+        <div class="col-sm-12 footer-title-wrap">
           <h1 class="footer-title">Контакты</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row contacts">
         <div class="col-sm-12 col-lg-6">
           <address class="addr">
             <h5 class="addr__title">Славь Салон</h5>
@@ -86,29 +87,33 @@
           </address>
         </div>
         <div class="col-sm-12 col-lg-6">
-          <form action="" class="contacts">
-            <div>
-              <input type="text" polaceholder="Ваше имя" />
-              <input type="text" polaceholder="e-mail" />
+          <form action="" class="form">
+            <div class="form-group">
+              <input class="form-control" type="text" polaceholder="Ваше имя" />
+              <input class="form-control" type="text" polaceholder="e-mail" />
             </div>
-            <div>
+            <div class="form-group">
               <textarea
                 name=""
                 id=""
-                cols="30"
-                rows="10"
                 polaceholder="Ваше сообщение"
+                class="form-control"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">отправить</button>
+            <button type="submit" class="btn btn-dark">отправить</button>
           </form>
         </div>
+      </div>
+      <div class="row">
+        <a href="tel:=+7995605680" type="button" class="btn btn-light call-btn">
+          быстрый звонок
+        </a>
       </div>
       <div class="row">
         <div id="map" style="width: 100%; height: 400px"></div>
       </div>
       <div class="row">
-        <div class="copy">&copy; 2019</div>
+        <div class="copy">Все права защищены. &copy; 2019</div>
       </div>
     </div>
     <script
