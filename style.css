@@ -15,10 +15,27 @@ body {
 .navbar-brand {
   position: absolute;
   top: 0.5em;
-  right: 1em;
+  right: 0.2em;
+  border: 1px solid #cccfd1;
+  padding: 0 1em;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.main {
+.nav-link {
+  font-size: 1.3rem;
+  line-height: 1.1;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .main-wrapper {
@@ -32,14 +49,13 @@ body {
 .jumbotron {
   /* opacity: 0.5; */
   position: relative;
-  min-height: 70vh;
+  min-height: 90vh;
   text-align: center;
 }
 
 .zapis-button {
-  /* margin-top: 50vh; */
   width: 200px;
-  margin: 0 auto;
+  margin: 2em auto 0;
   text-transform: uppercase;
 }
 
@@ -52,6 +68,7 @@ body {
 @media screen and (min-width: 990px) {
   .navbar-brand {
     position: static;
+    border: none;
   }
 }
 
@@ -64,12 +81,8 @@ body {
   left: 10em;
   bottom: 15em;
 }
-.main__jumbo {
-  /* position: absolute; */
-  bottom: 10em;
-  /* background: transparent url(./images/3.jpg) no-repeat center; */
-  /* background: transparent; */
-  /* background-size: contain; */
+.zapis__jumbo .jumbotron {
+  text-align: left;
 }
 .main-image {
   margin: 1em;
@@ -154,4 +167,44 @@ body {
   /* Firefox 4 - 18 */
   color: #000;
   opacity: 1;
+}
+
+.zapis__jumbo .jumbotron {
+  position: relative;
+  min-height: 60vh;
+  text-align: left;
+}
+
+.zapis-title {
+  border-bottom: 1px solid #6c757d;
+}
+
+.zapis-menu-wrapper {
+  margin-top: 2em;
+}
+
+#zapis-accordion .btn-link {
+  font-size: 1.5rem;
+  color: inherit;
+  width: 90%;
+  text-align: left;
+  position: relative;
+}
+
+#zapis-accordion .btn-link .card-pointer {
+  position: absolute;
+  right: 0.5em;
+}
+
+#zapis-accordion .card-header {
+  padding: 0.75rem 0;
+}
+
+#zapis-accordion hr {
+  margin: 0;
+}
+
+#zapis-accordion .media {
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
