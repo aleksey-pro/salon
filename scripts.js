@@ -11,3 +11,17 @@ function init() {
     zoom: 15,
   });
 }
+
+$(document).ready(function() {
+  var links = $('.footer-menu__link');
+  links.each(function(i, link) {
+    var anchor = $(link).attr('href');
+    console.log(anchor);
+    $(link).on('click', function(evt) {
+      evt.preventDefault();
+      console.log('anchor');
+
+      $('html, body').animate({ scrollTop: $(anchor).offset().top }, 1000);
+    });
+  });
+});

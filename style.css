@@ -1,3 +1,7 @@
+root {
+  --menu-h: rgba(0, 0, 0, 0.7);
+}
+
 body {
   /* background: #554c48cc; */
   font-family: 'Philosopher', sans-serif;
@@ -10,6 +14,10 @@ body {
 
 .navbar {
   border-bottom: 1px solid #6c757d;
+}
+
+.navbar-toggler {
+  visibility: hidden;
 }
 
 .navbar-brand {
@@ -150,26 +158,31 @@ body {
   margin: 0.3em 0;
 }
 
-::-webkit-input-placeholder {
-  /* Chrome */
+input[type='text']::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #000;
+  font-family: 'Philosopher', sans-serif;
 }
-:-ms-input-placeholder {
+
+input[type='text']:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   /* IE 10+ */
   color: #000;
+  font-family: 'Philosopher', sans-serif;
 }
-::-moz-placeholder {
+input[type='text']::-moz-placeholder,
+textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: #000;
-  opacity: 1;
-}
-:-moz-placeholder {
-  /* Firefox 4 - 18 */
-  color: #000;
+  font-family: 'Philosopher', sans-serif;
   opacity: 1;
 }
 
-.zapis__jumbo .jumbotron {
+.zapis__jumbo .jumbotron,
+.price__jumbo,
+.testimonials__jumbo,
+.atmosphere__jumbo,
+.talisman__jumbo {
   position: relative;
   min-height: 60vh;
   text-align: left;
@@ -207,4 +220,31 @@ body {
 #zapis-accordion .media {
   padding: 1em 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer-menu-wrap {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-menu {
+  background: #fff;
+  opacity: 0.75;
+  height: var(--menu-h);
+  border-top-width: 4px;
+  border-top-color: rgba(0, 0, 0, 0.1);
+  border-top-style: solid;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.footer-menu__link {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.1em;
+  line-height: 1;
+  padding: 0.5em 1em;
 }

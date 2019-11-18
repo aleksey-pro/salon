@@ -48,20 +48,20 @@
               <a class="nav-link" href="#">Отзывы</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Атмосфера</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Талисман участника</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
         <a class="navbar-brand" href="tel:=+7995605680">+7-995-605-6805</a>
       </nav>
     </div>
-    <div class="main">
+    <div class="main" id="main">
       <div class="container-fluid">
         <div class="row">
           <div class="main__jumbo">
@@ -77,98 +77,270 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="row main-wrapper">
-          <div class="col-sm-12 col-lg-4 main-poster">
-            <div class="main-logo">
-              <img src="images/logo/transp-fon.png" alt="" class="img-fluid" />
-            </div>
-            <img
-              src="images/1.jpg"
-              class="img-fluid main-image"
-              alt="Responsive image"
-            />
-            <img
-              src="images/4.jpg"
-              class="img-fluid main-image"
-              alt="Responsive image"
-            />
-            <img
-              src="images/5.jpg"
-              class="img-fluid main-image"
-              alt="Responsive image"
-            />
-          </div>
-          <div class="col-sm-12 col-lg-8 main-poster">
-            <div class="main-jumbo">
-              <img src="images/logo/transp-fon.png" alt="" />
-            </div>
-            <img
-              src="images/2.jpg"
-              class="img-fluid main-image"
-              alt="Responsive image"
-            />
-          </div>
-        </div> -->
         <div class="row">
           <div class="main__orn"></div>
         </div>
         <div class="row">
           <div class="akcii"></div>
         </div>
+        <!-- zapis section -->
+        <div class="row">
+          <div class="col-sm-12 zapis__jumbo">
+            <div class="jumbotron">
+              <div class="zapis-title">
+                <h3>Онлайн запись</h3>
+                <p>Славь barbershop</p>
+              </div>
+              <div class="zapis-menu-wrapper">
+                <div class="accordion" id="zapis-accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Сотрудник
+                          <span class="card-pointer">&gt;</span>
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div
+                      id="collapseOne"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#zapis-accordion"
+                    >
+                      <div class="card-body">
+                        <div class="media">
+                          <img src="#" class="mr-3" alt="..." />
+                          <div class="media-body">
+                            <h5 class="mt-0">Сотрудник 1</h5>
+                            <hr />
+                            Ближайший сеанс - 1 явнаря
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img src="#" class="mr-3" alt="..." />
+                          <div class="media-body">
+                            <h5 class="mt-0">Сотрудник 2</h5>
+                            <hr />
+                            Ближайший сеанс - 2 явнаря
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img src="#" class="mr-3" alt="..." />
+                          <div class="media-body">
+                            <h5 class="mt-0">Сотрудник 3</h5>
+                            <hr />
+                            Ближайший сеанс - 3 явнаря
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Услуга
+                          <span class="card-pointer">&gt;</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#zapis-accordion"
+                    >
+                      <div class="card-body">
+                        <div class="media">
+                          <img src="#" class="mr-3" alt="..." />
+                          <div class="media-body">
+                            <p class="mt-0">Услуга 1</p>
+                            <hr />
+                            1000 р.
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img src="#" class="mr-3" alt="..." />
+                          <div class="media-body">
+                            <p class="mt-0">Услуга 2</p>
+                            <hr />
+                            1000 р.
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img src="#" class="mr-3" alt="..." />
+                          <div class="media-body">
+                            <p class="mt-0">Услуга 3</p>
+                            <hr />
+                            1000 р.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Дата и время
+                          <span class="card-pointer">&gt;</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#zapis-accordion"
+                    >
+                      <div class="card-body">
+                        <form>
+                          <p>
+                            Укажите месяц:
+                            <input type="month" name="month" />
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <a href="№" type="button" class="btn btn-light call-btn">
+                    Оформить визит
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- price section -->
+        <div class="row" id="price">
+          <div class="col-sm-12 price__jumbo">
+            <div class="zapis-title">
+              <h3>Цены</h3>
+            </div>
+          </div>
+        </div>
+        <!-- testimonials section -->
+        <div class="row" id="testimonials">
+          <div class="col-sm-12 testimonials__jumbo">
+            <div class="zapis-title">
+              <h3>Отзывы</h3>
+            </div>
+          </div>
+        </div>
+        <!-- atmosphere section -->
+        <div class="row" id="atmosphere">
+          <div class="col-sm-12 atmosphere__jumbo">
+            <div class="zapis-title">
+              <h3>Атмосфера</h3>
+            </div>
+          </div>
+        </div>
+        <!-- talisman section -->
+        <div class="row" id="talisman">
+          <div class="col-sm-12  talisman__jumbo">
+            <div class="zapis-title">
+              <h3>Талисман</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer"></div>
-    <div class="container-fluid divider"></div>
-    <div class="container address-wrapper">
-      <div class="row">
-        <div class="col-sm-12 footer-title-wrap">
-          <h1 class="footer-title">Контакты</h1>
+    <div class="footer" id="footer">
+      <div class="container-fluid divider"></div>
+      <div class="container address-wrapper">
+        <div class="row">
+          <div class="col-sm-12 footer-title-wrap">
+            <h1 class="footer-title">Контакты</h1>
+          </div>
         </div>
-      </div>
-      <div class="row contacts">
-        <div class="col-sm-12 col-lg-6">
-          <address class="addr">
-            <h5 class="addr__title">Славь Салон</h5>
-            <p class="addr__line">г. САНКТ-ПЕТЕРБУРГ / ПАРНАС</p>
-            <p class="addr__line">6056805@gmail.com</p>
-            <p class="addr__line">www.славьсалон.рус</p>
-            <p class="addr__line">+79956056805</p>
-          </address>
+        <div class="row contacts">
+          <div class="col-sm-12 col-lg-6">
+            <address class="addr">
+              <h5 class="addr__title">Славь Салон</h5>
+              <p class="addr__line">г. САНКТ-ПЕТЕРБУРГ / ПАРНАС</p>
+              <p class="addr__line">6056805@gmail.com</p>
+              <p class="addr__line">www.славьсалон.рус</p>
+              <p class="addr__line">+79956056805</p>
+            </address>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <form action="" class="form">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <input class="form-control" type="text" placeholder="e-mail" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Ваше сообщение"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">отправить</button>
+            </form>
+          </div>
         </div>
-        <div class="col-sm-12 col-lg-6">
-          <form action="" class="form">
-            <div class="form-group">
-              <input class="form-control" type="text" polaceholder="Ваше имя" />
-              <input class="form-control" type="text" polaceholder="e-mail" />
-            </div>
-            <div class="form-group">
-              <textarea
-                name=""
-                id=""
-                polaceholder="Ваше сообщение"
-                class="form-control"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark">отправить</button>
-          </form>
+        <div class="row">
+          <a
+            href="tel:=+7995605680"
+            type="button"
+            class="btn btn-light call-btn"
+          >
+            быстрый звонок
+          </a>
         </div>
-      </div>
-      <div class="row">
-        <a href="tel:=+7995605680" type="button" class="btn btn-light call-btn">
-          быстрый звонок
-        </a>
-      </div>
-      <div class="row">
-        <div id="map" style="width: 100%; height: 400px"></div>
-      </div>
-      <div class="row">
-        <div class="copy">Все права защищены. &copy; 2019</div>
+        <div class="row">
+          <div id="map" style="width: 100%; height: 400px"></div>
+        </div>
+        <div class="row ">
+          <div class="copy">Все права защищены. &copy; 2019</div>
+        </div>
       </div>
     </div>
+    <div class="footer-menu-wrap">
+      <div class="footer-menu">
+        <a class="footer-menu__link" href="#main">Записаться</a>
+        <a class="footer-menu__link" href="#price">Цены</a>
+        <a class="footer-menu__link" href="#testimonials">Отзывы</a>
+        <a class="footer-menu__link" href="#atmosphere">Атмосфера</a>
+        <a class="footer-menu__link" href="#talisman">Талисман участника</a>
+        <a class="footer-menu__link" href="#footer">Контакты</a>
+      </div>
+    </div>
+
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script
