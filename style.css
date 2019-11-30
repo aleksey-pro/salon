@@ -97,18 +97,24 @@ body {
   }
 }
 
+.main__jumbo {
+  width: 100%;
+}
+
 .main__image {
-  height: 270px;
+  height: 390px;
   background: transparent url('./images/1-bg.jpg') no-repeat center;
   background-size: cover;
   margin-top: 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
+  margin-bottom: 1rem;
 }
 
 .main-poster {
   position: relative;
 }
+
 .main-logo {
   position: absolute;
   max-width: 50vw;
@@ -126,12 +132,10 @@ body {
 
 .divider {
   margin: 1em 0;
-  /* border-top: 1px solid #58a95e; */
 }
 
 .address-wrapper {
   border-radius: 1em;
-  /* border: 1px solid #58a95e; */
   padding: 1em;
 }
 
@@ -173,14 +177,13 @@ body {
 
 .price-list {
   font-family: Arial, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.3rem;
   padding-left: 1.5em;
   margin-top: 2em;
 }
 
 .price-item {
   margin: 0.2em 0;
-  text-align: right;
   margin-bottom: 1em;
 }
 
@@ -190,8 +193,15 @@ body {
   margin: 0 0.2em 5px;
 }
 
+.price-value {
+  font-size: 2rem;
+  min-width: 85px;
+}
+
 .price-name {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 0.5em;
   text-align: left;
 }
@@ -205,6 +215,7 @@ body {
 .price__icon-1 {
   background: transparent url('./images/icons/comb.png') no-repeat center;
   background-size: contain;
+  transform: rotate(180deg);
 }
 
 .price__icon-2 {
@@ -215,11 +226,13 @@ body {
 .price__icon-3 {
   background: transparent url('./images/icons/mash.png') no-repeat center;
   background-size: contain;
+  transform: rotate(180deg);
 }
 
 .price__icon-4 {
   background: transparent url('./images/icons/sciss1.png') no-repeat center;
   background-size: contain;
+  transform: rotate(180deg);
 }
 
 .price__icon-5 {
@@ -242,10 +255,8 @@ body {
 
 .masters__name {
   padding: 0.5em 0;
-}
-
-.masters__name-right {
-  text-align: right;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .masters__image {
@@ -253,12 +264,13 @@ body {
 }
 
 .masters__image-serg {
-  background: transparent url(./images/barber1.jpg) no-repeat 20% 50%;
+  background: transparent url(./images/barber1.jpg) no-repeat center;
   background-size: contain;
+  margin-bottom: 2rem;
 }
 
 .masters__image-vad {
-  background: transparent url(./images/barber1.jpg) no-repeat 60% 50%;
+  background: transparent url(./images/barber1.jpg) no-repeat center;
   background-size: contain;
 }
 
@@ -272,13 +284,21 @@ body {
   margin-bottom: 1em;
 }
 
-.atm-list {
+.atm-list, .atm-names {
   display: flex;
 }
 
 .atm-column {
   padding: 0;
   list-style: none;
+}
+
+.atm-names-column {
+  padding-left: 1rem;
+}
+
+.atm-names-column:first-child {
+  margin-right: 1em;
 }
 
 .atm-column:first-child {
@@ -292,11 +312,9 @@ body {
 
 .atm__item {
   height: 100px;
+  width: 45vw;
   padding: 0.2em;
   margin-bottom: 1em;
-  font-size: 1.1em;
-  color: rgba(0, 0, 0, 0.7);
-  /* line-height: 1.1em; */
 }
 
 .atm__item-obr {
