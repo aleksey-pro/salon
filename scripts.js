@@ -19,9 +19,7 @@ $(document).ready(function() {
     console.log(anchor);
     $(link).on('click', function(evt) {
       evt.preventDefault();
-      console.log('anchor');
-
-      $('html, body').animate({ scrollTop: $(anchor).offset().top }, 1000);
+      $('html, body').animate({ scrollTop: $(anchor).offset().top - 65}, 1000);
     });
   });
 });

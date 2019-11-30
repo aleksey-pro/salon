@@ -24,7 +24,7 @@
   </head>
   <body>
     <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-sticky">
         <button
           class="navbar-toggler"
           type="button"
@@ -43,6 +43,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Цены</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Мастера</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Отзывы</a>
@@ -69,185 +72,79 @@
               <img src="images/logo/transp-fon.png" alt="" class="img-fluid" />
               <a
                 href="./zapis.html"
-                type="button"
                 class="btn btn-dark zapis-button"
               >
-                отправить заявку
+                запись он-лайн
               </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="main__orn"></div>
-        </div>
-        <div class="row">
-          <div class="akcii"></div>
-        </div>
-        <!-- zapis section -->
-        <div class="row">
-          <div class="col-sm-12 zapis__jumbo">
-            <div class="jumbotron">
-              <div class="zapis-title">
-                <h3>Онлайн запись</h3>
-                <p>Славь barbershop</p>
-              </div>
-              <div class="zapis-menu-wrapper">
-                <div class="accordion" id="zapis-accordion">
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h2 class="mb-0">
-                        <button
-                          class="btn btn-link"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          Сотрудник
-                          <span class="card-pointer">&gt;</span>
-                        </button>
-                      </h2>
-                    </div>
-
-                    <div
-                      id="collapseOne"
-                      class="collapse"
-                      aria-labelledby="headingOne"
-                      data-parent="#zapis-accordion"
-                    >
-                      <div class="card-body">
-                        <div class="media">
-                          <img src="#" class="mr-3" alt="..." />
-                          <div class="media-body">
-                            <h5 class="mt-0">Сотрудник 1</h5>
-                            <hr />
-                            Ближайший сеанс - 1 явнаря
-                          </div>
-                        </div>
-                        <div class="media">
-                          <img src="#" class="mr-3" alt="..." />
-                          <div class="media-body">
-                            <h5 class="mt-0">Сотрудник 2</h5>
-                            <hr />
-                            Ближайший сеанс - 2 явнаря
-                          </div>
-                        </div>
-                        <div class="media">
-                          <img src="#" class="mr-3" alt="..." />
-                          <div class="media-body">
-                            <h5 class="mt-0">Сотрудник 3</h5>
-                            <hr />
-                            Ближайший сеанс - 3 явнаря
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h2 class="mb-0">
-                        <button
-                          class="btn btn-link collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          Услуга
-                          <span class="card-pointer">&gt;</span>
-                        </button>
-                      </h2>
-                    </div>
-                    <div
-                      id="collapseTwo"
-                      class="collapse"
-                      aria-labelledby="headingTwo"
-                      data-parent="#zapis-accordion"
-                    >
-                      <div class="card-body">
-                        <div class="media">
-                          <img src="#" class="mr-3" alt="..." />
-                          <div class="media-body">
-                            <p class="mt-0">Услуга 1</p>
-                            <hr />
-                            1000 р.
-                          </div>
-                        </div>
-                        <div class="media">
-                          <img src="#" class="mr-3" alt="..." />
-                          <div class="media-body">
-                            <p class="mt-0">Услуга 2</p>
-                            <hr />
-                            1000 р.
-                          </div>
-                        </div>
-                        <div class="media">
-                          <img src="#" class="mr-3" alt="..." />
-                          <div class="media-body">
-                            <p class="mt-0">Услуга 3</p>
-                            <hr />
-                            1000 р.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h2 class="mb-0">
-                        <button
-                          class="btn btn-link collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          Дата и время
-                          <span class="card-pointer">&gt;</span>
-                        </button>
-                      </h2>
-                    </div>
-                    <div
-                      id="collapseThree"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#zapis-accordion"
-                    >
-                      <div class="card-body">
-                        <form>
-                          <p>
-                            Укажите месяц:
-                            <input type="month" name="month" />
-                          </p>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <a href="№" type="button" class="btn btn-light call-btn">
-                    Оформить визит
-                  </a>
-                </div>
-              </div>
+              <div class="main__image"></div>
             </div>
           </div>
         </div>
         <!-- price section -->
         <div class="row" id="price">
           <div class="col-sm-12 price__jumbo">
-            <div class="zapis-title">
+            <div class="section-title">
               <h3>Цены</h3>
             </div>
+            <ul class="price-list">
+              <li class="price-item">
+                <div class="price-name"><span>Стрижка головы</span><span  class="price-dots"></span><span>990 р</span></div>
+                <i class="price__icon price__icon-1"></i>
+                <i class="price__icon price__icon-2"></i>
+                <i class="price__icon price__icon-3"></i>
+                <i class="price__icon price__icon-4"></i>
+              </li>
+              <li class="price-item">
+                <div class="price-name"><span>Оформление бороды</span><span  class="price-dots"></span><span>590 р</span></div>
+                <i class="price__icon price__icon-1"></i>
+                <i class="price__icon price__icon-3"></i>
+                <i class="price__icon price__icon-5"></i>
+              </li>
+              <li class="price-item">
+                <div class="price-name"><span>Стрижка головы +<br> Оформление бороды</span><span  class="price-dots"></span><span><br>1490 р</span></div>
+                <i class="price__icon price__icon-1"></i>
+                <i class="price__icon price__icon-2"></i>
+                <i class="price__icon price__icon-3"></i>
+                <i class="price__icon price__icon-4"></i>
+                <i class="price__icon price__icon-5"></i>
+              </li>
+              <li class="price-item">
+                <div class="price-name"><span>Тонировка бороды (окраска)</span><span  class="price-dots"></span><span>390 р</span></div>
+                <i class="price__icon price__icon-6"></i>
+                </li>
+              <li class="price-item">
+                <div class="price-name"><span>Бритье головы наголо</span><span  class="price-dots"></span><span>490 р</span></div>
+                <i class="price__icon price__icon-1"></i>
+                <i class="price__icon price__icon-3"></i>
+                <i class="price__icon price__icon-5"></i>
+                </li>
+              <li class="price-item">
+                <div class="price-name"><span>Бритье бороды наголо</span><span  class="price-dots"></span><span>390 р</span></div>
+                <i class="price__icon price__icon-3"></i>
+                <i class="price__icon price__icon-5"></i>
+                </li>
+              <li class="price-item">
+                <div class="price-name"><span>Массаж головы</span><span  class="price-dots"></span><span>350 р</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- masters section -->
+        <div class="row" id="masters">
+          <div class="col-sm-12 masters__jumbo">
+            <div class="section-title">
+              <h3>Мастера</h3>
+            </div>
+            <div class="masters__name">Никишонков Сергей</div>
+            <div class="masters__image masters__image-serg"></div>
+            <div class="masters__name masters__name-right">Яковлев Вадим</div>
+            <div class="masters__image masters__image-vad"></div>
           </div>
         </div>
         <!-- testimonials section -->
         <div class="row" id="testimonials">
           <div class="col-sm-12 testimonials__jumbo">
-            <div class="zapis-title">
+            <div class="section-title">
               <h3>Отзывы</h3>
             </div>
           </div>
@@ -255,15 +152,30 @@
         <!-- atmosphere section -->
         <div class="row" id="atmosphere">
           <div class="col-sm-12 atmosphere__jumbo">
-            <div class="zapis-title">
+            <div class="section-title">
               <h3>Атмосфера</h3>
+            </div>
+            <div class="atmosphere__content">
+              <h5 class="atmosphere__title"><span>Славьсалон  - Место силы мужской красоты</span></h5>
+              <div class="atm-list">
+                  <ul class="atm-column">
+                    <li class="atm__item atm__item-obr"><span>Истинные мужские образы</span</li>
+                    <li class="atm__item atm__item-water"><span>Живая родниковая вода</span></li>
+                    <li class="atm__item atm__item-tea"><span>Чай / кофе</span></li>
+                  </ul>
+                  <ul class="atm-column">
+                    <li class="atm__item atm__item-good"><span>Доброе общение</span></li>
+                    <li class="atm__item atm__item-stone"><span>Энергетический славь-камень</span></li>
+                    <li class="atm__item atm__item-wf"><span>WI-FI, WC</span></li>
+                  </ul>
+              </div>
             </div>
           </div>
         </div>
         <!-- talisman section -->
         <div class="row" id="talisman">
           <div class="col-sm-12  talisman__jumbo">
-            <div class="zapis-title">
+            <div class="section-title">
               <h3>Талисман</h3>
             </div>
           </div>
@@ -331,6 +243,7 @@
       <div class="footer-menu">
         <a class="footer-menu__link" href="#main">Записаться</a>
         <a class="footer-menu__link" href="#price">Цены</a>
+        <a class="footer-menu__link" href="#masters">Мастера</a>
         <a class="footer-menu__link" href="#testimonials">Отзывы</a>
         <a class="footer-menu__link" href="#atmosphere">Атмосфера</a>
         <a class="footer-menu__link" href="#talisman">Талисман участника</a>
