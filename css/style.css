@@ -103,7 +103,7 @@ body {
 
 .main__image {
   height: 390px;
-  background: transparent url('./images/1-bg.jpg') no-repeat center;
+  background: transparent url('../images/1-bg.jpg') no-repeat center;
   background-size: cover;
   margin-top: 1rem;
   margin-left: -1rem;
@@ -213,35 +213,36 @@ body {
 }
 
 .price__icon-1 {
-  background: transparent url('./images/icons/comb.png') no-repeat center;
+  background: transparent url('../images/icons/comb.png') no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
 }
 
 .price__icon-2 {
-  background: transparent url('./images/icons/chair.png') no-repeat center;
+  background: transparent url('../images/icons/chair.png') no-repeat center;
   background-size: contain;
 }
 
 .price__icon-3 {
-  background: transparent url('./images/icons/mash.png') no-repeat center;
+  background: transparent url('../images/icons/mash.png') no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
 }
 
 .price__icon-4 {
-  background: transparent url('./images/icons/sciss1.png') no-repeat center;
+  background: transparent url('../images/icons/sciss1.png') no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
 }
 
 .price__icon-5 {
-  background: transparent url('./images/icons/edge1.png') no-repeat center;
+  background: transparent url('../images/icons/edge1.png') no-repeat center;
   background-size: contain;
+  transform: rotate(180deg);
 }
 
 .price__icon-6 {
-  background: transparent url('./images/icons/head1.png') no-repeat center;
+  background: transparent url('../images/icons/head1.png') no-repeat center;
   background-size: contain;
 }
 
@@ -264,13 +265,13 @@ body {
 }
 
 .masters__image-serg {
-  background: transparent url(./images/barber1.jpg) no-repeat center;
+  background: transparent url(../images/barber1.jpg) no-repeat center;
   background-size: contain;
   margin-bottom: 2rem;
 }
 
 .masters__image-vad {
-  background: transparent url(./images/barber1.jpg) no-repeat center;
+  background: transparent url(../images/barber1.jpg) no-repeat center;
   background-size: contain;
 }
 
@@ -295,6 +296,7 @@ body {
 
 .atm-names-column {
   padding-left: 1rem;
+  font-size: 1.2rem;
 }
 
 .atm-names-column:first-child {
@@ -310,41 +312,40 @@ body {
   padding: 0.1em;
 }
 
-.atm__item {
-  height: 100px;
+.atm__item img{
+  height: 100%;
   width: 45vw;
-  padding: 0.2em;
   margin-bottom: 1em;
 }
 
 .atm__item-obr {
-  background: transparent url('./images/5.jpg') no-repeat center;
+  background: transparent url('../images/5.jpg') no-repeat center;
   background-size: cover;
 }
 
 .atm__item-water {
-  background: transparent url('./images/6.jpg') no-repeat center;
+  background: transparent url('../images/6.jpg') no-repeat center;
   background-size: cover;
 }
 
 .atm__item-tea {
-  background: transparent url('./images/7.jpg') no-repeat center;
+  background: transparent url('../images/7.jpg') no-repeat center;
   background-size: cover;
 }
 
 .atm__item-wf {
-  background: transparent url('./images/8.jpg') no-repeat center;
+  background: transparent url('../images/8.jpg') no-repeat center;
   background-size: cover;
 }
 
 .atm__item-good {
-  background: transparent url('./images/9.jpg') no-repeat center;
+  background: transparent url('../images/9.jpg') no-repeat center;
   background-size: cover;
 }
 
 
 .atm__item-stone {
-  background: transparent url('./images/10.jpg') no-repeat center;
+  background: transparent url('../images/10.jpg') no-repeat center;
   background-size: cover;
 }
 
