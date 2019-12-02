@@ -259,11 +259,18 @@ body {
   font-size: 1.5em;
 }
 
-.masters__image {
-  height: 300px;
+.masters__jumbo a{
+  text-align: center;
+  display: block;
 }
 
-.masters__image-serg {
+.masters__image {
+  height: 300px;
+  margin: 0 auto;
+
+}
+
+/* .masters__image-serg {
   background: transparent url(../images/barber1.jpg) no-repeat center;
   background-size: contain;
   margin-bottom: 2rem;
@@ -272,7 +279,7 @@ body {
 .masters__image-vad {
   background: transparent url(../images/barber1.jpg) no-repeat center;
   background-size: contain;
-}
+} */
 
 /* ATMO */
 
