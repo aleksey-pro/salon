@@ -16,7 +16,6 @@ $(document).ready(function() {
   var links = $('.nav-link');
   links.each(function(i, link) {
     var anchor = $(link).attr('href');
-    console.log(anchor);
     $(link).on('click', function(evt) {
       evt.preventDefault();
       $('html, body').animate({ scrollTop: $(anchor).offset().top - 65}, 1000);
