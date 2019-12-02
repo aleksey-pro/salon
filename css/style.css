@@ -249,7 +249,8 @@ body {
 
 .masters__jumbo {
   padding-bottom: 2em;
-  background-color: #e9ecef;
+  background-color: #1d1d1d;
+  color: #FFF;
 }
 
 .masters__name {
@@ -276,7 +277,8 @@ body {
 /* ATMO */
 
 .atmosphere__jumbo {
-  background-color: #e9ecef;
+  background-color: #1d1d1d;
+  color: #FFF;
 }
 
 .atmosphere__title {
@@ -434,6 +436,7 @@ textarea::-moz-placeholder {
 
 .footer-menu-wrap {
   position: sticky;
+  position: -webkit-sticky;
   bottom: 0;
   left: 0;
 }
