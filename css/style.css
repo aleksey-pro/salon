@@ -9,9 +9,13 @@ body {
   font-family: 'Philosopher', sans-serif;
   color: #000;
 }
+h3 {
+  margin-top: 0.7rem;
+}
 
 .nav-item {
   border-bottom: 1px solid #6c757d;
+  padding-left: 0.5em
 }
 
 .navbar {
@@ -81,6 +85,7 @@ body {
   height: calc(100vh - 65px);
   text-align: center;
   padding: 0 1rem;
+  background-color: #212121;
 }
 
 
@@ -391,6 +396,14 @@ textarea::-moz-placeholder {
   border-bottom: 1px solid #6c757d;
   margin-bottom: 2rem;
 }
+
+
+/* TALISMAN */
+
+.talisman__image {
+  width: 100%;
+}
+
 
 /* ZAPIS */
 
