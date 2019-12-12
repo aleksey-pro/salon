@@ -258,6 +258,11 @@ h3 {
   color: #FFF;
 }
 
+.masters__photos {
+  display: flex;
+  align-items: flex-end;
+}
+
 .masters__name {
   padding: 0.5em 0;
   text-align: center;
@@ -272,6 +277,7 @@ h3 {
 .masters__image {
   height: 300px;
   margin: 0 auto;
+  width: 100%;
 
 }
 
@@ -288,10 +294,10 @@ h3 {
 
 /* ATMO */
 
-.atmosphere__jumbo {
+/* .atmosphere__jumbo {
   background-color: #1d1d1d;
   color: #FFF;
-}
+} */
 
 .atmosphere__title {
   margin-bottom: 1em;
@@ -400,8 +406,21 @@ textarea::-moz-placeholder {
 
 /* TALISMAN */
 
+.talisman__jumbo {
+  background-color: #1d1d1d;
+  color: #FFF;
+}
+
+#talisman p {
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
 .talisman__image {
+  background: transparent url('../images/talisman.jpg') no-repeat center;
+  background-size: cover;
   width: 100%;
+  opacity: 0.7;
 }
 
 
