@@ -23,4 +23,5 @@ $(document).ready(function() {
       $('.navbar-collapse').removeClass('show');
     });
   });
+  $('#datetimepicker').datetimepicker();
 });

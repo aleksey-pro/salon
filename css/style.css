@@ -18,6 +18,11 @@ h3 {
   padding-left: 0.5em
 }
 
+
+.btn-link.focus, .btn-link:focus {
+  text-decoration: none !important;
+}
+
 .navbar {
   border-bottom: 1px solid #6c757d;
   background: #ffffff;
@@ -91,7 +96,7 @@ h3 {
   height: calc(100vh - 65px);
   text-align: center;
   padding: 0 1rem;
-  background-color: #212121;
+  background-color: #222222;
 }
 
 
@@ -187,11 +192,10 @@ h3 {
 
 .price-list {
   font-family: 'Rubik', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   padding-left: 1.5em;
-  margin-top: 2em;
   font-weight: 400;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
   padding-inline-start: 0;
 }
 
@@ -228,7 +232,7 @@ h3 {
 }
 
 .price__icon {
-  height: 50px;
+  height: 30px;
   width: 45px;
   display: inline-block;
 }
@@ -236,7 +240,7 @@ h3 {
 .price__icon-1 {
   background: transparent url('../images/icons/comb.png') no-repeat center;
   background-size: contain;
-  transform: rotate(270deg);
+  transform: rotate(317deg);
 }
 
 .price__icon-2 {
@@ -259,7 +263,7 @@ h3 {
 .price__icon-5 {
   background: transparent url('../images/icons/edge1.png') no-repeat center;
   background-size: contain;
-  transform: rotate(90deg);
+  transform: rotate(55deg);
 }
 
 .price__icon-6 {
@@ -272,13 +276,13 @@ h3 {
 
 .masters__jumbo {
   padding-bottom: 2em;
-  background-color: #1d1d1d;
+  background-color: #222222;
   color: #FFF;
 }
 
 .masters__photos {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
 }
 
 .masters__name {
@@ -295,8 +299,6 @@ h3 {
 .masters__image {
   height: 300px;
   margin: 0 auto;
-  width: 100%;
-
 }
 
 /* .masters__image-serg {
@@ -418,14 +420,14 @@ textarea::-moz-placeholder {
 
 .section-title {
   border-bottom: 1px solid #6c757d;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 
 /* TALISMAN */
 
 .talisman__jumbo {
-  background-color: #1d1d1d;
+  background-color: #222222;
   color: #FFF;
 }
 
@@ -487,6 +489,37 @@ textarea::-moz-placeholder {
 #zapis-accordion .media {
   padding: 1em 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.mr-3 {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.media-body {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.media-body span {
+  min-width: 55px;
+}
+
+.check-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.check-date input {
+  margin-left: 5px;
+    outline: none;
+    padding: 5px;
+    border-left: 1px solid;
+    border-style: groove;
 }
 
 /* FOOTER */
