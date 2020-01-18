@@ -263,7 +263,7 @@ h3 {
 .price__icon-5 {
   background: transparent url('../images/icons/edge1.png') no-repeat center;
   background-size: contain;
-  transform: rotate(55deg);
+  transform: rotate(138deg);
 }
 
 .price__icon-6 {
@@ -338,7 +338,7 @@ h3 {
 }
 
 .atm-names-column:first-child {
-  margin-right: 1em;
+  margin-right: 15px;
 }
 
 .atm-column:first-child {
@@ -389,7 +389,7 @@ h3 {
 
 input[type='text']::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #000;
+  color: rgba(0,0,0, 0.6);
   font-family: 'Philosopher', sans-serif;
 }
 
@@ -421,6 +421,9 @@ textarea::-moz-placeholder {
 .section-title {
   border-bottom: 1px solid #6c757d;
   margin-bottom: 1.5rem;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
 }
 
 
@@ -523,6 +526,11 @@ textarea::-moz-placeholder {
 }
 
 /* FOOTER */
+
+.footer {
+  background: rgba(0, 0, 0, 0.05);
+}
+
 
 .footer-menu-wrap {
   position: sticky;

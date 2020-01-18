@@ -23,5 +23,8 @@ $(document).ready(function() {
       $('.navbar-collapse').removeClass('show');
     });
   });
-  $('#datetimepicker').datetimepicker();
+  const dp = $('#datetimepicker');
+  if(dp.length) {
+    dp.datetimepicker();
+  }
 });
