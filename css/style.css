@@ -449,6 +449,13 @@ textarea::-moz-placeholder {
 
 /* ZAPIS */
 
+.zapis__jumbo {
+  background-color: #222222;
+}
+
+.zapis-title {
+  color: #FFF;
+}
 
 @media screen and (max-width: 357px) {
   .btn-back {
@@ -527,7 +534,7 @@ textarea::-moz-placeholder {
 
 /* FOOTER */
 
-.footer {
+.address-wrapper {
   background: rgba(0, 0, 0, 0.05);
 }
 
