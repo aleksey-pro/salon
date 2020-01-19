@@ -12,7 +12,57 @@ function init() {
   });
 }
 
+function sendMail() {
+  $('#mail-form').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: '/send-mail',
+      type: 'POST',
+      data: JSON.stringify({
+        name: $('#mail-name').val(),
+        message: $('#mail-mess').val(),
+        mail: $('#mail-mail').val()
+      }),
+      contentType: "application/json; charset=utf-8",
+      error: function(xhr, desc, err) {
+          console.log(err);
+          // console.log("Details0: " + desc + "\nError:" + err);
+      },
+    }).always(function(msg) {
+      if (msg === 'ok') {
+        $('#mail-form').trigger("reset");
+      }
+    });
+  });
+}
+
+function sendOrder() {
+  $('#order-form').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: '/send-order',
+      type: 'POST',
+      data: JSON.stringify({
+        masterName: $('#order-master').text(),
+        service: $('.form-check-input:checked').siblings('.form-check-label').text(),
+        date: $('#datetimepicker').val()
+      }),
+      contentType: "application/json; charset=utf-8",
+      error: function(xhr, desc, err) {
+          console.log(err);
+          // console.log("Details0: " + desc + "\nError:" + err);
+      },
+    }).always(function(msg) {
+      if (msg === 'ok') {
+        $('#order-form').trigger("reset");
+      }
+    });
+  });
+}
+
 $(document).ready(function() {
+  sendOrder();
+  sendMail();
   var links = $('.nav-link');
   links.each(function(i, link) {
     var anchor = $(link).attr('href');

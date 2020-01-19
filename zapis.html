@@ -46,7 +46,7 @@
               <p>Славь barbershop</p>
             </div>
 
-            <div class="zapis-menu-wrapper">
+            <form id="order-form" class="zapis-menu-wrapper">
               <div class="accordion" id="zapis-accordion">
                 <div class="card">
                   <div class="card-header" id="headingOne">
@@ -75,7 +75,7 @@
                       <div class="media">
                         <img src="./images/barber1-face.jpg" class="mr-3" alt="Slav salon" />
                         <div class="media-body">
-                          <h5 class="mt-0">Никишонков Сергей</h5>
+                          <h5 id="order-master" class="mt-0">Никишонков Сергей</h5>
                           <!-- <hr />
                           Ближайший сеанс - 1 явнаря -->
                         </div>
@@ -229,13 +229,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
               <div class="row">
-                <a href="№" type="button" class="btn btn-light call-btn">
-                  Оформить визит
-                </a>
+                <button type="submit" class="btn btn-light call-btn">Оформить визит</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -259,21 +256,26 @@
           </address>
         </div>
         <div class="col-sm-12 col-lg-6">
-          <form action="" class="form">
-            <div class="form-group">
-              <input class="form-control" type="text" placeholder="Ваше имя" />
-              <input class="form-control" type="text" placeholder="e-mail" />
-            </div>
-            <div class="form-group">
-              <textarea
-                name=""
-                id=""
-                placeholder="Ваше сообщение"
-                class="form-control"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark">отправить</button>
-          </form>
+            <form action="" class="form" id="mail-form">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Ваше имя"
+                  id="mail-name"
+                />
+                <input class="form-control" type="text" placeholder="e-mail" id="mail-mail"/>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name=""
+                  id="mail-mess"
+                  placeholder="Ваше сообщение"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">отправить</button>
+            </form>
         </div>
       </div>
       <div class="row">
@@ -289,8 +291,7 @@
       </div>
     </div>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
       crossorigin="anonymous"
     ></script>
     <script
