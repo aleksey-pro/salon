@@ -63,7 +63,7 @@ function sendOrder() {
 $(document).ready(function() {
   sendOrder();
   sendMail();
-  var links = $('.nav-link');
+  var links = $('.navLink');
   links.each(function(i, link) {
     var anchor = $(link).attr('href');
     $(link).on('click', function(evt) {
