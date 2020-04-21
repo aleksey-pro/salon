@@ -14,8 +14,13 @@ h3 {
 }
 
 .nav-item {
-  border-bottom: 1px solid #6c757d;
   padding-left: 0.5em
+}
+
+@media screen and(max-width: 968px) {
+  .nav-item {
+    border-bottom: 1px solid #6c757d;
+  }
 }
 
 
@@ -332,6 +337,10 @@ h3 {
   list-style: none;
 }
 
+.atm-column  a{
+  display: block;
+}
+
 .atm-names-column {
   padding-left: 1rem;
   font-size: 1.2rem;
@@ -352,7 +361,7 @@ h3 {
 
 .atm__item img{
   height: 100%;
-  width: 45vw;
+  width: 100%;
   margin-bottom: 1em;
 }
 
@@ -414,7 +423,6 @@ textarea::-moz-placeholder {
 .atmosphere__jumbo,
 .talisman__jumbo {
   position: relative;
-  min-height: 60vh;
   text-align: left;
 }
 
@@ -435,7 +443,7 @@ textarea::-moz-placeholder {
 }
 
 #talisman p {
-  margin-bottom: 0.5em;
+  margin: 0.5em;
   text-align: justify;
 }
 
