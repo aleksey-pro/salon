@@ -23,7 +23,7 @@ const express = require('express'),
       });
       let mailOptions = {
           from: req.body.mail,
-          to: "6056805@gmail.com",
+          to: "anxieter@gmail.com",
           subject: 'Сообщение от клиента с сайта от' + req.body.mail + ' ' + req.body.mail,
           html: '<div>' + req.body.message + '</div>'
       };
