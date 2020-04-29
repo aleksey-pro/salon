@@ -4,7 +4,7 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     dotenv = require('dotenv').config();
     var app = express();
-    app.use(express.static(path.join(__dirname+'/dist/')));
+    // app.use(express.static(path.join(__dirname+'/dist/')));
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({extended: true}));
 
