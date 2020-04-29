@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slav-salon</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Philosopher:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap" rel="stylesheet">
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=00889198-3a95-484b-a303-d8d5a3672583
+    &lang=ru_RU"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-sticky">
+        <a href="index.html"
+          class="btn btn-back"
+
+        >
+          <span class="zapis-back-icon"></span>
+          На главную
+        </a>
+         <a class="navbar-brand" href="tel:=+7995605680">+7-995-605-6805</a>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 zapis__jumbo">
+            <div class="zapis-title">
+              <h3>Анкета участника</h3>
+              <p>Славь клуб</p>
+            </div>
+
+            <form id="application-form" class="zapis-menu-wrapper" method="POST" action="/api/v1/form">
+              <div class="form">
+                <div class="form-group">
+                  <label for="phone">Номер телефона</label>
+                  <input type="phone" class="form-control" placeholder="" id="phone">
+                </div>
+                <div class="form-group">
+                  <label for="mail">Почтовый ящик</label>
+                  <input type="mail" class="form-control" placeholder="" id="mail">
+                </div>
+                <div class="form-group">
+                  <label for="location">Локация (местонахождение)</label>
+                  <input type="text" class="form-control" placeholder="" id="location">
+                </div>
+                <div class="form-group">
+                  <label for="nick">Ник-нейм</label>
+                  <input type="text" class="form-control" placeholder=" " id="nick">
+                </div>
+                <div class="form-group">
+                  <label for="about">О себе</label>
+                  <textarea class="form-control" rows="5" id="about"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="competence">Описание компетенций</label>
+                  <textarea class="form-control" rows="5" id="competence"></textarea>
+                </div>  
+                <div class="row">
+                  <button type="submit" class="btn btn-light call-btn">Подать заявку</button>
+                </div>                                                              
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <div class="container divider"></div>
+    <div class="container address-wrapper">
+      <div class="row">
+        <div class="col-sm-12 footer-title-wrap">
+          <h1 class="footer-title">Контакты</h1>
+        </div>
+      </div>
+      <div class="row contacts">
+        <div class="col-sm-12 col-lg-6">
+          <address class="addr">
+            <h5 class="addr__title">Славь Салон</h5>
+            <p class="addr__line">г. САНКТ-ПЕТЕРБУРГ / ПАРНАС</p>
+            <p class="addr__line">6056805@gmail.com</p>
+            <p class="addr__line">www.славьсалон.рус</p>
+            <p class="addr__line">+79956056805</p>
+          </address>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <form action="" class="form" id="mail-form">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Ваше имя"
+                  id="mail-name"
+                />
+                <input class="form-control" type="text" placeholder="e-mail" id="mail-mail"/>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name=""
+                  id="mail-mess"
+                  placeholder="Ваше сообщение"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">отправить</button>
+            </form>
+        </div>
+      </div>
+      <div class="row">
+        <a href="tel:=+7995605680" type="button" class="btn btn-light call-btn">
+          быстрый звонок
+        </a>
+      </div>
+      <div class="row">
+        <div id="map" style="width: 100%; height: 400px"></div>
+      </div>
+      <div class="row">
+        <div class="copy">Все права защищены. &copy; 2019</div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="libs/jquery.datetimepicker.full.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
