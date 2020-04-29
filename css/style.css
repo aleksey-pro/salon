@@ -540,6 +540,16 @@ textarea::-moz-placeholder {
     border-style: groove;
 }
 
+
+
+/* ANKETA */
+
+.anketa {
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+}
+
+
 /* FOOTER */
 
 .address-wrapper {
