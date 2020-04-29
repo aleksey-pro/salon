@@ -1,5 +1,5 @@
 .env
 /.vscode
-/node_modules
+node_modules
 barber design elements.eps
 p.zip
