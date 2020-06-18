@@ -50,7 +50,7 @@ const express = require('express'),
       });
       let mailOptions = {
           from: req.body.mail,
-          to: "6056805@gmail.com",
+          to: "anxieter@gmail.com",
           subject: 'Заявка от клиента с сайта',
           html: `
             <div>
@@ -69,6 +69,39 @@ const express = require('express'),
               res.render('zapis');
           });
       });
+
+      app.post('/send-query', function (req, res) {
+        res.send('ok');
+        let transporter = nodeMailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 465,
+            secure: true,
+            auth: {
+                user: process.env.SENDMAIL_USER,
+                pass: process.env.SENDMAIL_PASS
+            }
+        });
+        let mailOptions = {
+            from: req.body.mail,
+            to: "anxieter@gmail.com",
+            subject: 'Заявка на регистрацию в клуб',
+            html: `
+              <div>
+              <div>Никнейм: ${req.body.nick}</div>
+              <div>Телефон: ${req.body.phone}</div>
+              </div>
+            `,
+        };
+  
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error);
+            }
+            console.log('Message %s sent: %s', info.messageId, info.response);
+                res.render('zapis');
+            });
+        });
+
 
 
       app.listen(port, function(){
